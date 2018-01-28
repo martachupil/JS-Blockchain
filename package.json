@@ -1,0 +1,22 @@
+{
+  "name": "js-blockchain",
+  "version": "0.0.1",
+  "description": "JavaScript Crypto BlockChain",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martachupil/js-blockchain.git"
+  },
+  "author": "Marta Chupil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martachupil/js-blockchain/issues"
+  },
+  "homepage": "https://github.com/martachupil/js-blockchain#readme",
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
+  }
+}
