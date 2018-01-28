@@ -29,5 +29,11 @@ class Blockchain {
 
     addBlock(newBlock) {
         newBlock.previousHash = this.getLatestBlock().hash;
+        newBlock.hash = newBlock.calculateHash();
+        this.chain.push(newBlock);
     }
 }
+
+let kittyCoin = new Blockchain();
+kittyCoin.addBlock(new Block(1, "11/01/2018", {amount: 4}));
+kittyCoin.addBlock(new Block(1, "17/01/2018", {amount: 54}));
