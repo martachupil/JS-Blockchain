@@ -1,4 +1,4 @@
-# JacaScript Blockchain
+# JavaScript Blockchain
 
 A blockchain is a continuously growing list of records, called blocks,
 which are linked and secured simultaneously using cryptography.
