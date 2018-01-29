@@ -3,10 +3,10 @@ const SHA256 = require('crypto-js/sha256');
 class Block {
     constructor(index, timestamp, data, previousHash = '') {
         this.index = index;
+        this.previousHash = previousHash;
         this.timestamp = timestamp;
         this.data = data;
-        this.previousHash = previousHash;
-        this.hash = calculateHash();
+        this.hash = this.calculateHash();
     }
 
     calculateHash() {
@@ -37,3 +37,5 @@ class Blockchain {
 let kittyCoin = new Blockchain();
 kittyCoin.addBlock(new Block(1, "11/01/2018", {amount: 4}));
 kittyCoin.addBlock(new Block(1, "17/01/2018", {amount: 54}));
+
+console.log(JSON.stringify(kittyCoin, null, 4));
